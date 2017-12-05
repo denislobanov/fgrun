@@ -455,7 +455,7 @@ Wizard::write_fgfsrc( Fl_Preferences &prefs, std::ostream& os, const char* pfx )
     if (prefs.get( "nav2", buf, "", buflen-1 ) && buf[0] != 0)
         os << pfx << "--nav2=" << buf;
     if (prefs.get( "adf", buf, "", buflen-1 ) && buf[0] != 0)
-        os << pfx << "--adf=" << buf;
+        os << pfx << "--adf1=" << buf;
     prefs.get( "dme", buf, "disabled", buflen-1 );
     if (strcmp( "disabled", buf ) != 0)
         os << pfx << "--dme=" << buf;
